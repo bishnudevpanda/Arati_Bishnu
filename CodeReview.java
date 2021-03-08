@@ -1,15 +1,14 @@
 class Student{
-    int id;
-    String name;
-    double percentage;
-    ArrayList<String> skills
-            = new ArrayList<String>(); 
+    public int id;
+    public String name;							//defining variables
+    public double percentage;
+    public String[] skills; 
 
-    public Student(int id, String name, double percentage,String skill) {
+    public Student(int id, String name, double percentage,String[] skills) {	
         this.id=id;
-        this.name = name;
+        this.name = name;						//constructor class
         this.percentage = percentage;
-	skills.add(skill);
+	this.skills = skills;
     }
 
     public int getId() {
@@ -19,7 +18,7 @@ class Student{
     public String getName() {
         return name;
     }
-
+									//getter methods
     public double getPercent() {
         return percentage;
     }
@@ -35,13 +34,13 @@ class Student{
     public void setName(String name) {
         this.name = name;
     }
-
+										//setter methods
     public void setPercent(double percentage) {
         this.percentage = percentage;
     }
 
-    public void setSkills(String val) {
-        skills.add(val);
+    public void setSkills(String[] skills) {
+        this.skills = skills;
     }
 }
 	
